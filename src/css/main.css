@@ -1,0 +1,195 @@
+body{
+    background-color:rgb(172, 167, 167);
+}
+.nav-wrapper .brand-logo{
+    font-weight: 500;
+    font-style: italic;
+    color:black !important;
+}
+.nav-wrapper .brand-logo img{
+    vertical-align: middle;
+    padding-bottom: 10px;
+    margin-right: 10px;
+}
+.nav-wrapper .topnav a,.nav-wrapper .side-nav a{
+    color:black !important;
+}
+.sidenav .user-view{
+    height:150px !important;
+}
+#body-content{
+    margin-top:20px;
+}
+#home-container .dicoding-logo{
+    vertical-align: middle;
+}#home-container a{
+    position: relative;
+    z-index: 1;
+}
+.message-container{
+    background-color: #fff;
+    padding:70px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    position: relative;
+    overflow: hidden;
+}
+.message-container .message-img{
+    width:300px;
+    position: absolute;
+    bottom:-50px;
+    right: -20px;
+}
+.message-container h1{
+    position: relative;
+    z-index: 1;
+    font-size: 50px;
+    font-weight:300;
+    margin-top:0;
+    font-weight:500;
+}
+.card-column{
+    width:100%;
+}
+.card{
+    height:300px;
+    padding:30px !important;
+
+}
+.card .card-image{
+    width:50%;
+}
+.card .card-stacked{
+    width:50%;
+}
+.card .card-image img{
+    width:100%;
+    height:100%;
+}
+.card .card-content .card-title{
+    font-weight: 400;
+    margin:0;
+}
+.card .card-content .date{
+    margin:10px 0;
+}
+.card .card-content .btn{
+    font-size:14px;
+    overflow: hidden;
+}
+.card .card-content .btn i{
+    margin-right:5px;
+}
+
+#detail-container{
+    background-color: #fff;
+    padding:30px;
+}
+#detail-container .squad-header{
+    font-weight:500;
+    font-size:25px;
+}
+#detail-container .squad-header i{
+    font-size:35px;
+}
+#detail-container img{
+    width:100%;
+    height:100%;
+    max-height:300px;
+}
+#detail-container .message-img{
+    width:auto;
+    height:auto;
+    max-height:auto;
+}
+#detail-container .card{
+    height:auto;
+}
+#detail-container .card-title{
+    margin-bottom: 10px;
+}
+#detail-container .card .card-content .grey-text{
+    margin:5px 0;
+}
+#detail-container .card .card-image{
+    width:30%;
+}
+#detail-container .card .card-stacked{
+    margin-left:40px;
+    width:70%;
+}
+#detail-container .card .matches{
+    margin-top:15px;
+}
+#detail-container .squad{
+    padding:0;
+}
+.modal{
+    border:3px solid;
+    border-radius: 3px;
+}
+.modal .modal-content{
+    padding:10px 17px;
+    text-align: center;
+}
+.modal .modal-content span{
+    font-size: 18px;
+}
+.modal .modal-content span .delete-name,.modal .modal-content span .save-name{
+    font-weight:500;
+}
+#save-modal{
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+#save-modal .modal-content span{
+    color:#155724
+}
+#delete-modal{
+    background-color: #f8d7da;
+    border-color:#f5c6cb;
+}
+#delete-modal .modal-content span{
+    color:#721c24;
+}
+#match-container{
+    background-color: #fff;
+}
+@media (max-width:993px){
+    #detail-container .card{
+        height:auto;
+        display:block;
+    }
+    #detail-container .card .card-stacked{
+        margin-left:0;
+        width:100%;
+        text-align: center;
+    }
+    #detail-container .card .card-image{
+        width:100%;
+        max-width:100%;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+    #detail-container .card img{
+        width:50%;
+        
+    }
+}
+@media(max-width:480px){
+    .nav-wrapper .brand-logo{
+        font-size:20px;
+    }
+    .nav-wrapper .brand-logo img{
+        width:35px;
+        margin-right: 0;
+    }
+    #home-container .dicoding-logo{
+        vertical-align: middle;
+        width:170px;
+    }
+    #home-container h1{
+        font-size:37px;
+    }
+}

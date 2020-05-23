@@ -1,0 +1,53 @@
+{
+  "icons": [
+    {
+      "src": "/icons/icon_512x512.5de062ca90564a45bb097091a474ef13.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon_384x384.66d1e3cd3fa77e0bd2a1ac24f6aee0d7.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon_256x256.3750198d6e17aceb39427dcaa78c34c8.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon_192x192.f5a7dc7ecd5ba47f97e15604626faa32.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon_144x144.3902d183e537c697f4a0ea9b1dbe11c1.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon_128x128.30649943113efa6f70d6d4c2765ae7dd.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon_96x96.235042238fa84f1c3e9f023b32613b47.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon_72x72.fe9236191650a0525a60bfe29a7ff099.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    }
+  ],
+  "name": "Submission 2 Football PWA",
+  "short_name": "Football PWA",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": "/index.html",
+  "description": "TUGAS SUBMISSION 2",
+  "background_color": "#ACA7A7",
+  "theme_color": "#FFFFFF",
+  "gcm_sender_id": "377328385962"
+}
