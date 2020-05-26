@@ -41,7 +41,7 @@ const getAll = ()=>{
                 <div class="row message-container">
                     <img class="message-img" src="/assets/soccer2.png">
                     <div class="col s12">
-                        <h1>Currently,No Item Has Been Saved Yet.</h1>
+                        <h1>No Item.</h1>
                     </div>
                 </div>
                 `)

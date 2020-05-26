@@ -3,8 +3,7 @@ const merge = require('webpack-merge');
 const common = require('./webpack.common.js');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const WebpackPwaManifest = require('webpack-pwa-manifest');
-const {GenerateSW} = require('workbox-webpack-plugin');
-const ServiceWorkerWebpackPlugin = require('serviceworker-webpack-plugin');
+const {GenerateSW,InjectManifest} = require('workbox-webpack-plugin');
 
 module.exports = merge(common,{
     mode:'production',
@@ -99,22 +98,27 @@ module.exports = merge(common,{
           }
         ]
       }),
-      new GenerateSW({
+      // new GenerateSW({
+      //   swDest: 'sw.js',
+      //   clientsClaim: true,
+      //   skipWaiting: true,
+      //   exclude: [new RegExp('/icons/icon_')],
+      //   runtimeCaching: [{
+      //     urlPattern: new RegExp('https://'),
+      //     handler: 'StaleWhileRevalidate',
+      //     options:{
+      //       cacheName:'football-api-request',
+      //       expiration:{
+      //         maxEntries:50,
+      //         maxAgeSeconds:30 * 24 * 60 * 60
+      //       }
+      //     }
+      //   }]
+      // })
+      new InjectManifest({
+        swSrc: './src/sw.js',
         swDest: 'sw.js',
-        clientsClaim: true,
-        skipWaiting: true,
-        exclude: [new RegExp('/icons/icon_')],
-        runtimeCaching: [{
-          urlPattern: new RegExp('https://'),
-          handler: 'StaleWhileRevalidate',
-          options:{
-            cacheName:'football-api-request',
-            expiration:{
-              maxEntries:50,
-              maxAgeSeconds:30 * 24 * 60 * 60
-            }
-          }
-        }]
+        exclude: [new RegExp('/icons/icon_')]
       })
     ]
 })
